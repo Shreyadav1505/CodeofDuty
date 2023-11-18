@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Main page</title>
+    <link href="caption_me_new.css" rel="stylesheet">
+</head>
+<body>
+    <nav>
+        <div class="menu">
+            <div class="logo">
+                <a herf="#">Captunes</a>
+        </div>
+        <ul>
+            <li><a herf="#">Home</a></li>
+            <li><a herf="#">About</a></li>
+            <li><a herf="#">Services</a></li>
+            <li><a herf="#">Contact</a></li>
+            <li><a herf="#">Feedback</a></li>
+        </ul>
+    </nav>
+    <div class="img"></div>
+    <section class="main_class">
+        <h1>Captunes</h1>
+    </section>
+    <section class="upload_class">
+        <p>Add your image here</p>
+        <form id="captunesForm" method="post" enctype="multipart/form-data">
+            <input type="file" id="files" name="files[]" multiple accept=".jpg,.jpeg,.png"/>
+            <label for="files" id="choose-btn">Choose files</label>
+            <span id="file-name">No files chosen</span>
+        </form> 
+        <script>
+            var input=document.getElementById("files");
+            var button = document.getElementById("choose-btn");
+            var text = document.getElementById("file-name");
+
+            // Update the text element when the input value changes
+            input.addEventListener("change", function() {
+            // Get the selected file name
+            var fileName = input.value.split("\\").pop();
+
+            // If no file is selected, display the default message
+            if (!fileName) {
+            text.innerHTML = "No files chosen";
+            } else {
+            // Otherwise, display the file name
+            text.innerHTML = fileName;
+            }
+        });
+        </script>           
+    </section>
+    <!--<button class="button" style="vertical-align:middle"><span>Hover </span></button>-->
+    <input type="button" class="button" value="Upload"/>
+</body>
+</html>
