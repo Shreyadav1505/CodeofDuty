@@ -1,0 +1,171 @@
+*{
+    margin:0px;
+    padding:opx;
+}
+.nav{
+    position: fixed;
+    background: #1b1b1b;
+    width: 100%;
+    padding: 10px 0;
+    z-index: 12;
+    
+}
+nav .menu{
+    max-width: 1250px;
+    background-color: rgba(21,21,19,200);
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+}
+.menu .logo a{
+    text-decoration: none;
+    text-shadow: 0 0 3px #b1aeaed7, 0 0 5px #b1aeaed7;
+    color:rgba(0, 0, 0, 0.959);
+    font-size: 35px;
+    font-weight: 600;
+}
+.menu ul{
+    display: inline-flex;
+}
+.menu ul li{
+    list-style: none;
+    margin-left: 35px;
+}
+.menu ul li a{
+    text-decoration: none;
+    color: #f5eef5;
+    font-size: 18px;
+    font-weight: 500;
+    /*background: #dfb4e4;*/
+    padding: 8px 15px;
+    border-radius: 5px;
+    transition: all 0.3s ease-in;
+}
+.menu ul li a:hover{
+    background: #fff;
+    color: #000;
+}
+.img{
+    background: url("conor-luddy-IVaKksEZmZA-unsplash (1).png") no-repeat;
+    height: 100vh;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+.img::before{
+    margin-top: 20px;
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: rbga(0,0,0,4);
+}
+
+body{
+   /* background: url("conor-luddy-IVaKksEZmZA-unsplash.jpg") no-repeat;
+    background-size: cover;
+    background-position: center;
+    height:100%;
+    position: relative;*/
+    background-color: #000000;
+    padding:10px;
+    display:flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+}
+.main_class{
+    font-size: 80px;
+    font-family: Playfair Display;
+    font-style: italic;
+    text-shadow: 0 0 3px #000000, 0 0 5px #363642;  
+    text-decoration: wavy;
+    color:rgba(245, 240, 240, 0.945);
+    margin:auto;
+    padding:50px;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 0 20px;
+    text-align: center;
+}
+/*.title{
+    position: absolute;
+    top: 52%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #dfb4e4;
+    padding: 0 20px;
+    text-align: center;
+}*/
+.upload_class{
+    background:rgba(65, 140, 153, 0.918);
+    border:3.5px solid rgba(66, 71, 71, 0.678);
+    color:#797979;
+    height:70px;
+    width:60%;
+    margin:auto;
+    padding:20px;
+    font-size: 20px; 
+    position: absolute;
+    top: 59%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #000000a6;
+    padding: 0 20px;
+}
+.p{
+    width:center;
+    color: #747474;
+    font-size: 20px;
+    font-weight: 600;
+}
+.button{
+    margin:50px auto;
+    background-color: rgb(0, 179, 255);
+    font-size: 20px;
+    font-weight: 300;
+    padding:10px;
+    border:#e70d3d;
+    height:40px;
+    width:100px;
+    color:rgba(255, 255, 255, 0.678);
+    position: absolute;
+    top: 65%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #000000e3;
+    padding: 0 20px;
+    text-align: center;
+    
+}
+/*#upload_btn{
+    height:40px;
+    width:60px;
+    float:right;
+}*/
+.button:hover{
+    background-color: #868586f6;
+    color:#1b001b;
+    cursor:pointer;
+    transition: all 0.3s ease;
+}
+#files{
+    display:none;
+}
+#file-name{
+    font-size: 18px;
+    color: transparent;
+    margin-left: 10px;
+}
+#choose-btn {
+    background-color: rgba(104, 108, 109, 0.678);
+    padding:5px;
+    border: 2px solid #706b70;
+    font-size: 13px;
+    color: #000000c2;
+    cursor: pointer;
+}
